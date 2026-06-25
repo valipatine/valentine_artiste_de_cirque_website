@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Valentine Yvin - Artiste de cirque. Trapèze sangles, mat chinois."
+    />
+    <title>Accueil | Artiste de cirque</title>
+
+    <link rel="canonical" href="https://valipatine.github.io/valentine_artiste_de_cirque_website/" />
+    <link rel="alternate" hreflang="fr" href="https://valipatine.github.io/valentine_artiste_de_cirque_website/" />
+    <link rel="alternate" hreflang="en" href="https://valipatine.github.io/valentine_artiste_de_cirque_website/?lang=en" />
+    <link rel="alternate" hreflang="es" href="https://valipatine.github.io/valentine_artiste_de_cirque_website/?lang=es" />
+    <link rel="alternate" hreflang="x-default" href="https://valipatine.github.io/valentine_artiste_de_cirque_website/" />
+
+    <meta property="og:title" content="Valentine Yvin - Artiste de cirque" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/images/hero.jpg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&family=Montserrat:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header" id="top">
+      <nav class="nav" aria-label="Main navigation">
+        <a class="nav-logo" href="#top">VY</a>
+
+        <button
+          class="nav-toggle"
+          aria-label="Menu"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#top" data-i18n="nav.home">Accueil</a></li>
+          <li><a href="#biographie" data-i18n="nav.bio">Biographie</a></li>
+          <li><a href="#mat-chinois" data-i18n="nav.mat">Mat Chinois</a></li>
+          <li><a href="#trapeze-sangles" data-i18n="nav.trap">Trapèze sangles</a></li>
+          <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+
+        <div class="lang-switcher" role="group" aria-label="Language">
+          <button class="lang-btn active" data-lang="fr" aria-pressed="true">FR</button>
+          <span class="lang-sep">|</span>
+          <button class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+          <span class="lang-sep">|</span>
+          <button class="lang-btn" data-lang="es" aria-pressed="false">ES</button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-label="Hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <h1 class="hero-name">
+            <span class="hero-first" data-i18n="hero.firstName">Valentine</span>
+            <span class="hero-last" data-i18n="hero.lastName">Yvin</span>
+          </h1>
+        </div>
+      </section>
+
+      <section class="section bio" id="biographie">
+        <div class="container bio-grid">
+          <div class="bio-text">
+            <h2 class="section-heading" data-i18n="bio.heading">Biographie</h2>
+            <p class="bio-tagline" data-i18n="bio.tagline">
+              Enthousiaste à l'idée de parcourir le monde et de partager sa passion
+            </p>
+            <div class="bio-paragraphs">
+              <p data-i18n="bio.p1">
+                Valentine est née en France et a grandi au Chili où elle s'est initiée aux arts du cirque.
+              </p>
+              <p data-i18n="bio.p2">
+                Elle découvre les aériens durant son adolescence dans un cours récréatif de son quartier.
+              </p>
+              <p data-i18n="bio.p3">
+                Immergée dans le monde des aériens, Valentine a toujours été intéressée par les différents appareils aériens.
+              </p>
+              <p data-i18n="bio.p4">
+                Rigoureuse et disciplinée, Valentine est impatiente d'intégrer une troupe et de faire rêver le public.
+              </p>
+            </div>
+          </div>
+          <div class="bio-image">
+            <img
+              src="assets/images/biographie.jpeg"
+              alt="Valentine Yvin"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="section discipline" id="mat-chinois">
+        <div class="discipline-image">
+          <img
+            src="assets/images/mat-chinois.jpeg"
+            alt="Mat Chinois"
+            loading="lazy"
+          />
+        </div>
+        <div class="discipline-label">
+          <h2 data-i18n="disciplines.mat">Mat Chinois</h2>
+        </div>
+      </section>
+
+      <section class="section discipline discipline-reverse" id="trapeze-sangles">
+        <div class="discipline-image">
+          <img
+            src="assets/images/trapeze-sangles.jpeg"
+            alt="Trapèze sangles"
+            loading="lazy"
+          />
+        </div>
+        <div class="discipline-label">
+          <h2 data-i18n="disciplines.trap">Trapèze sangles</h2>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact">
+        <div class="container contact-inner">
+          <h2 class="section-heading" data-i18n="contact.heading">Contactez-moi</h2>
+
+          <form class="contact-form" id="contact-form" novalidate>
+            <div class="form-group">
+              <label for="name" data-i18n="contact.name">Nom</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                data-i18n-placeholder="contact.name"
+                placeholder="Nom"
+              />
+            </div>
+            <div class="form-group">
+              <label for="email" data-i18n="contact.email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                data-i18n-placeholder="contact.email"
+                placeholder="Email"
+              />
+            </div>
+            <div class="form-group">
+              <label for="message" data-i18n="contact.message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+                data-i18n-placeholder="contact.message"
+                placeholder="Message"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn-submit" data-i18n="contact.submit">
+              Envoyer
+            </button>
+          </form>
+
+          <p class="form-success hidden" id="form-success" data-i18n="contact.success">
+            Merci de m'avoir contacté!
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p data-i18n="footer">© Copyrights - Valentine Yvin - 2020</p>
+    </footer>
+
+    <script src="js/i18n.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
