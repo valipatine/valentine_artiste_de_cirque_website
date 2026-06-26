@@ -25,4 +25,4 @@ python3 -m http.server 8000
 
 ## Contact form
 
-Uses [FormSubmit](https://formsubmit.co) → `adrienyvin@gmail.com`. Confirm the activation email on first submission.
+Uses [FormSubmit](https://formsubmit.co) → `valipatine@gmail.com`. Confirm the activation email on first submission.

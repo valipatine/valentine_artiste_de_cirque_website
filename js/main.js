@@ -1,4 +1,4 @@
-const CONTACT_EMAIL = "adrienyvin@gmail.com";
+const CONTACT_EMAIL = "valipatine@gmail.com";
 
 function initNav() {
   const toggle = document.querySelector(".nav-toggle");

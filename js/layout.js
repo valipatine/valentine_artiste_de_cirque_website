@@ -1,6 +1,6 @@
 const SOCIAL = {
   facebook: "https://www.facebook.com/valentineyvinartistedecirque/",
-  instagram: "https://www.instagram.com/valentineyvin/?hl=en",
+  instagram: "https://www.instagram.com/rulosalvientoo/",
   youtube:
     "https://www.youtube.com/channel/UCDN5LKlx5cKHbzyabUa4a5w/videos?disable_polymer=1",
 };
