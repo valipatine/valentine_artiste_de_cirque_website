@@ -1,27 +1,28 @@
 # Valentine Yvin — Artiste de cirque
 
-Portfolio website for circus artist Valentine Yvin, hosted on GitHub Pages.
+Modern portfolio for aerial circus artist Valentine Yvin.
 
-**Live site:** https://valipatine.github.io/valentine_artiste_de_cirque_website/
+**Live:** https://valipatine.github.io/valentine_artiste_de_cirque_website/
+
+## Structure
+
+| Page | Content |
+|------|---------|
+| `index.html` | Hero, biography, 3 discipline cards, booking info, contact form |
+| `mat-chinois.html` | Love letter + 6-photo gallery |
+| `trapeze-sangles.html` | Love letter + 5-photo gallery |
+| `aerial-loop.html` | Cerceau Lyra / Aerial loop — acts & gallery |
 
 ## Languages
 
-The site is available in French (default), English, and Spanish. Use the FR | EN | ES switcher in the navigation, or append `?lang=en` / `?lang=es` to the URL.
-
-## Contact form
-
-Messages are sent via [FormSubmit](https://formsubmit.co) to `adrienyvin@gmail.com`. On first use, FormSubmit will send a confirmation email — click the link to activate the form.
+French (default), English, Spanish — via FR | EN | ES or `?lang=en` / `?lang=es`.
 
 ## Local preview
-
-Open `index.html` in a browser, or run a local server:
 
 ```bash
 python3 -m http.server 8000
 ```
 
-Then visit http://localhost:8000
+## Contact form
 
-## GitHub Pages
-
-Settings → Pages → Source: `main` branch, `/ (root)`.
+Uses [FormSubmit](https://formsubmit.co) → `adrienyvin@gmail.com`. Confirm the activation email on first submission.

@@ -3,188 +3,230 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Valentine Yvin - Artiste de cirque. Trapèze sangles, mat chinois."
-    />
-    <title>Accueil | Artiste de cirque</title>
-
+    <meta name="description" content="Valentine Yvin — Artiste de cirque aérienne. Trapèze sangles, mât chinois, cerceau Lyra. Disponible pour festivals, galas et événements." />
+    <title>Valentine Yvin — Artiste de cirque aérienne</title>
     <link rel="canonical" href="https://valipatine.github.io/valentine_artiste_de_cirque_website/" />
     <link rel="alternate" hreflang="fr" href="https://valipatine.github.io/valentine_artiste_de_cirque_website/" />
     <link rel="alternate" hreflang="en" href="https://valipatine.github.io/valentine_artiste_de_cirque_website/?lang=en" />
     <link rel="alternate" hreflang="es" href="https://valipatine.github.io/valentine_artiste_de_cirque_website/?lang=es" />
-    <link rel="alternate" hreflang="x-default" href="https://valipatine.github.io/valentine_artiste_de_cirque_website/" />
-
-    <meta property="og:title" content="Valentine Yvin - Artiste de cirque" />
+    <meta property="og:title" content="Valentine Yvin — Artiste de cirque aérienne" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="assets/images/hero.jpg" />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&family=Montserrat:wght@300;400;500&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body>
-    <header class="site-header" id="top">
-      <nav class="nav" aria-label="Main navigation">
-        <a class="nav-logo" href="#top">VY</a>
-
-        <button
-          class="nav-toggle"
-          aria-label="Menu"
-          aria-expanded="false"
-          aria-controls="nav-menu"
-        >
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-
-        <ul class="nav-menu" id="nav-menu">
-          <li><a href="#top" data-i18n="nav.home">Accueil</a></li>
-          <li><a href="#biographie" data-i18n="nav.bio">Biographie</a></li>
-          <li><a href="#mat-chinois" data-i18n="nav.mat">Mat Chinois</a></li>
-          <li><a href="#trapeze-sangles" data-i18n="nav.trap">Trapèze sangles</a></li>
-          <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
-        </ul>
-
-        <div class="lang-switcher" role="group" aria-label="Language">
-          <button class="lang-btn active" data-lang="fr" aria-pressed="true">FR</button>
-          <span class="lang-sep">|</span>
-          <button class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
-          <span class="lang-sep">|</span>
-          <button class="lang-btn" data-lang="es" aria-pressed="false">ES</button>
-        </div>
-      </nav>
-    </header>
+  <body data-page="home">
+    <div id="site-header"></div>
 
     <main>
-      <section class="hero" aria-label="Hero">
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-          <h1 class="hero-name">
-            <span class="hero-first" data-i18n="hero.firstName">Valentine</span>
-            <span class="hero-last" data-i18n="hero.lastName">Yvin</span>
-          </h1>
+      <section class="hero hero--loading" aria-label="Hero">
+        <div class="hero-inner">
+          <div class="hero-panel hero-panel--text">
+            <div class="hero-content">
+              <p class="hero-eyebrow" data-i18n="hero.eyebrow">Artiste de cirque aérienne</p>
+              <h1 class="hero-title">
+                <span class="hero-name hero-name--first" data-i18n="hero.firstName">Valentine</span>
+                <span class="hero-name hero-name--last" data-i18n="hero.lastName">Yvin</span>
+              </h1>
+              <p class="hero-subtitle" data-i18n="hero.subtitle"></p>
+              <a href="#biographie" class="hero-cta">
+                <span class="hero-cta-text" data-i18n="hero.cta">Découvrir</span>
+                <span class="hero-cta-arrow" aria-hidden="true">↓</span>
+              </a>
+            </div>
+          </div>
+          <div class="hero-panel hero-panel--visual" aria-hidden="true">
+            <div class="hero-visual">
+              <div class="hero-visual-bg"></div>
+              <div class="hero-visual-edge"></div>
+            </div>
+          </div>
         </div>
+        <a href="#biographie" class="hero-scroll" aria-label="Scroll">
+          <span class="hero-scroll-line"></span>
+        </a>
       </section>
 
-      <section class="section bio" id="biographie">
+      <section class="bio" id="biographie">
         <div class="container bio-grid">
-          <div class="bio-text">
-            <h2 class="section-heading" data-i18n="bio.heading">Biographie</h2>
-            <p class="bio-tagline" data-i18n="bio.tagline">
-              Enthousiaste à l'idée de parcourir le monde et de partager sa passion
-            </p>
+          <div class="bio-text reveal">
+            <header class="section-header">
+              <p class="section-label" data-i18n="bio.label">Biographie</p>
+              <h2 class="section-title" data-i18n="bio.title"></h2>
+              <p class="section-intro section-intro--accent" data-i18n="bio.tagline"></p>
+            </header>
             <div class="bio-paragraphs">
-              <p data-i18n="bio.p1">
-                Valentine est née en France et a grandi au Chili où elle s'est initiée aux arts du cirque.
-              </p>
-              <p data-i18n="bio.p2">
-                Elle découvre les aériens durant son adolescence dans un cours récréatif de son quartier.
-              </p>
-              <p data-i18n="bio.p3">
-                Immergée dans le monde des aériens, Valentine a toujours été intéressée par les différents appareils aériens.
-              </p>
-              <p data-i18n="bio.p4">
-                Rigoureuse et disciplinée, Valentine est impatiente d'intégrer une troupe et de faire rêver le public.
-              </p>
+              <p data-i18n="bio.p1"></p>
+              <p data-i18n="bio.p2"></p>
+              <p data-i18n="bio.p3"></p>
+              <p data-i18n="bio.p4"></p>
+            </div>
+            <div class="credentials">
+              <span class="credential" data-i18n="bio.cred1"></span>
+              <span class="credential" data-i18n="bio.cred2"></span>
+              <span class="credential" data-i18n="bio.cred3"></span>
+            </div>
+            <div class="certifications">
+              <h3 class="certifications-label" data-i18n="bio.certificationsLabel">Certifications sécurité</h3>
+              <ul class="certifications-list">
+                <li data-i18n="bio.cert1">Travail en hauteur — Niveau 1</li>
+              </ul>
             </div>
           </div>
-          <div class="bio-image">
-            <img
-              src="assets/images/biographie.jpeg"
-              alt="Valentine Yvin"
-              loading="lazy"
-            />
+          <div class="bio-image reveal">
+            <img src="assets/images/biographie.jpeg" alt="Valentine Yvin" loading="lazy" />
           </div>
         </div>
       </section>
 
-      <section class="section discipline" id="mat-chinois">
-        <div class="discipline-image">
-          <img
-            src="assets/images/mat-chinois.jpeg"
-            alt="Mat Chinois"
-            loading="lazy"
-          />
-        </div>
-        <div class="discipline-label">
-          <h2 data-i18n="disciplines.mat">Mat Chinois</h2>
+      <section class="specialties" id="disciplines">
+        <div class="container">
+          <header class="section-header section-header--light reveal">
+            <p class="section-label" data-i18n="specialties.label">Disciplines</p>
+            <h2 class="section-title" data-i18n="specialties.title"></h2>
+            <p class="section-intro" data-i18n="specialties.intro"></p>
+          </header>
+          <div class="specialty-cards">
+            <a class="specialty-card reveal" href="mat-chinois.html" data-page-href="mat-chinois.html">
+              <span class="specialty-card-index" aria-hidden="true">01</span>
+              <div class="specialty-card-image">
+                <img src="assets/images/mat-chinois/01.jpg" alt="" loading="lazy" />
+              </div>
+              <div class="specialty-card-body">
+                <h3 data-i18n="specialties.matTitle">Mât chinois</h3>
+                <p data-i18n="specialties.matDesc"></p>
+                <span class="specialty-card-link" data-i18n="specialties.discover">Explorer →</span>
+              </div>
+            </a>
+            <a class="specialty-card reveal" href="trapeze-sangles.html" data-page-href="trapeze-sangles.html">
+              <span class="specialty-card-index" aria-hidden="true">02</span>
+              <div class="specialty-card-image">
+                <img src="assets/images/trapeze-sangles/02.jpg" alt="" loading="lazy" />
+              </div>
+              <div class="specialty-card-body">
+                <h3 data-i18n="specialties.trapSanglesTitle">Trapèze sangles</h3>
+                <p data-i18n="specialties.trapSanglesDesc"></p>
+                <span class="specialty-card-link" data-i18n="specialties.discover">Explorer →</span>
+              </div>
+            </a>
+            <a class="specialty-card reveal" href="aerial-loop.html" data-page-href="aerial-loop.html">
+              <span class="specialty-card-index" aria-hidden="true">03</span>
+              <div class="specialty-card-image">
+                <img src="assets/images/trapeze-danse/02.jpg" alt="" loading="lazy" />
+              </div>
+              <div class="specialty-card-body">
+                <h3 data-i18n="specialties.trapDanseTitle">Cerceau Lyra</h3>
+                <p data-i18n="specialties.trapDanseDesc"></p>
+                <span class="specialty-card-link" data-i18n="specialties.discover">Explorer →</span>
+              </div>
+            </a>
+          </div>
         </div>
       </section>
 
-      <section class="section discipline discipline-reverse" id="trapeze-sangles">
-        <div class="discipline-image">
-          <img
-            src="assets/images/trapeze-sangles.jpeg"
-            alt="Trapèze sangles"
-            loading="lazy"
-          />
-        </div>
-        <div class="discipline-label">
-          <h2 data-i18n="disciplines.trap">Trapèze sangles</h2>
+      <section class="booking-strip" id="collaborations">
+        <div class="container">
+          <header class="section-header section-header--center reveal">
+            <p class="section-label" data-i18n="booking.label">Collaborations</p>
+            <h2 class="section-title" data-i18n="booking.title"></h2>
+            <p class="section-intro" data-i18n="booking.intro"></p>
+          </header>
+
+          <div class="booking-types">
+            <article class="booking-type reveal">
+              <span class="booking-type-num" aria-hidden="true">01</span>
+              <strong data-i18n="booking.type1title"></strong>
+              <p data-i18n="booking.type1desc"></p>
+            </article>
+            <article class="booking-type reveal">
+              <span class="booking-type-num" aria-hidden="true">02</span>
+              <strong data-i18n="booking.type2title"></strong>
+              <p data-i18n="booking.type2desc"></p>
+            </article>
+            <article class="booking-type reveal">
+              <span class="booking-type-num" aria-hidden="true">03</span>
+              <strong data-i18n="booking.type3title"></strong>
+              <p data-i18n="booking.type3desc"></p>
+            </article>
+            <article class="booking-type reveal">
+              <span class="booking-type-num" aria-hidden="true">04</span>
+              <strong data-i18n="booking.type4title"></strong>
+              <p data-i18n="booking.type4desc"></p>
+            </article>
+          </div>
+
+          <div class="booking-actions reveal">
+            <p class="languages-note" data-i18n="booking.languages"></p>
+            <div class="booking-actions-cta">
+              <p data-i18n="booking.videoText"></p>
+              <a
+                href="https://www.youtube.com/channel/UCDN5LKlx5cKHbzyabUa4a5w/videos"
+                target="_blank"
+                rel="noopener"
+                class="booking-video-btn"
+                data-i18n="booking.videoBtn"
+              >Voir les vidéos</a>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section class="section contact" id="contact">
-        <div class="container contact-inner">
-          <h2 class="section-heading" data-i18n="contact.heading">Contactez-moi</h2>
-
-          <form class="contact-form" id="contact-form" novalidate>
-            <div class="form-group">
-              <label for="name" data-i18n="contact.name">Nom</label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                required
-                data-i18n-placeholder="contact.name"
-                placeholder="Nom"
-              />
+      <section class="contact" id="contact">
+        <div class="container contact-layout">
+          <header class="section-header reveal">
+            <p class="section-label" data-i18n="contact.label">Contact</p>
+            <h2 class="section-title" data-i18n="contact.title"></h2>
+            <p class="section-intro" data-i18n="contact.intro"></p>
+          </header>
+          <div class="reveal">
+            <div class="contact-form-panel">
+            <form class="contact-form" id="contact-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name" data-i18n="contact.name">Nom</label>
+                  <input type="text" id="name" name="name" required data-i18n-placeholder="contact.name" />
+                </div>
+                <div class="form-group">
+                  <label for="email" data-i18n="contact.email">Email</label>
+                  <input type="email" id="email" name="email" required data-i18n-placeholder="contact.email" />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="organization" data-i18n="contact.organization">Organisation</label>
+                  <input type="text" id="organization" name="organization" data-i18n-placeholder="contact.organization" />
+                </div>
+                <div class="form-group">
+                  <label for="eventType" data-i18n="contact.eventType">Type d'événement</label>
+                  <select id="eventType" name="eventType">
+                    <option value="" data-i18n-option="contact.eventSelect">Sélectionner…</option>
+                    <option value="circus" data-i18n-option="contact.eventCircus"></option>
+                    <option value="agency" data-i18n-option="contact.eventAgency"></option>
+                    <option value="festival" data-i18n-option="contact.eventFestival"></option>
+                    <option value="private" data-i18n-option="contact.eventPrivate"></option>
+                    <option value="other" data-i18n-option="contact.eventOther"></option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="message" data-i18n="contact.message">Message</label>
+                <textarea id="message" name="message" rows="4" required data-i18n-placeholder="contact.message"></textarea>
+              </div>
+              <button type="submit" class="btn-submit" data-i18n="contact.submit">Envoyer</button>
+            </form>
+            <p class="form-success hidden" id="form-success" data-i18n="contact.success"></p>
             </div>
-            <div class="form-group">
-              <label for="email" data-i18n="contact.email">Email</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                required
-                data-i18n-placeholder="contact.email"
-                placeholder="Email"
-              />
-            </div>
-            <div class="form-group">
-              <label for="message" data-i18n="contact.message">Message</label>
-              <textarea
-                id="message"
-                name="message"
-                rows="5"
-                required
-                data-i18n-placeholder="contact.message"
-                placeholder="Message"
-              ></textarea>
-            </div>
-            <button type="submit" class="btn-submit" data-i18n="contact.submit">
-              Envoyer
-            </button>
-          </form>
-
-          <p class="form-success hidden" id="form-success" data-i18n="contact.success">
-            Merci de m'avoir contacté!
-          </p>
+          </div>
         </div>
       </section>
     </main>
 
-    <footer class="site-footer">
-      <p data-i18n="footer">© Copyrights - Valentine Yvin - 2020</p>
-    </footer>
+    <div id="site-footer"></div>
 
     <script src="js/i18n.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/layout.js"></script>
   </body>
 </html>
