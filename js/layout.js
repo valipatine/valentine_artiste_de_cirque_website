@@ -9,6 +9,8 @@ function renderHeader(activePage) {
   const suffix = langSuffix();
   const isHome = activePage === "home";
   const homePrefix = isHome ? "" : `index.html${suffix}`;
+  const disciplinePages = ["matChinois", "trapezeSangles", "aerialLoop"];
+  const isDisciplinesActive = disciplinePages.includes(activePage);
 
   return `
     <header class="site-header" id="header">
@@ -21,7 +23,43 @@ function renderHeader(activePage) {
 
         <ul class="nav-menu" id="nav-menu">
           <li><a href="${homePrefix}#biographie" data-i18n="nav.bio">Biographie</a></li>
-          <li><a href="${homePrefix}#disciplines" data-i18n="nav.disciplines">Disciplines</a></li>
+          <li class="nav-item nav-item--dropdown${isDisciplinesActive ? " is-active" : ""}">
+            <a
+              href="${homePrefix}#disciplines"
+              class="nav-link nav-link--parent${isDisciplinesActive ? " active" : ""}"
+              data-i18n="nav.disciplines"
+              aria-haspopup="true"
+            >Disciplines</a>
+            <ul class="nav-submenu" role="menu">
+              <li role="none">
+                <a
+                  href="mat-chinois.html${suffix}"
+                  data-page-href="mat-chinois.html"
+                  class="nav-link${activePage === "matChinois" ? " active" : ""}"
+                  data-i18n="nav.mat"
+                  role="menuitem"
+                >Mât chinois</a>
+              </li>
+              <li role="none">
+                <a
+                  href="trapeze-sangles.html${suffix}"
+                  data-page-href="trapeze-sangles.html"
+                  class="nav-link${activePage === "trapezeSangles" ? " active" : ""}"
+                  data-i18n="nav.trapSangles"
+                  role="menuitem"
+                >Trapèze sangles</a>
+              </li>
+              <li role="none">
+                <a
+                  href="aerial-loop.html${suffix}"
+                  data-page-href="aerial-loop.html"
+                  class="nav-link${activePage === "aerialLoop" ? " active" : ""}"
+                  data-i18n="nav.trapDanse"
+                  role="menuitem"
+                >Cerceau Lyra</a>
+              </li>
+            </ul>
+          </li>
           <li><a href="${homePrefix}#contact" data-i18n="nav.contact">Contact</a></li>
         </ul>
 
